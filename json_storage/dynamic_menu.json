@@ -1,0 +1,92 @@
+{
+    "menu_structure": {
+        "file": {
+            "i18n_key": "menu.file",
+            "items": [
+                {
+                    "type": "action",
+                    "id": "menu.file.language",
+                    "command_class": "ChangeLanguageCommand"
+                },
+                {
+                    "type": "action",
+                    "id": "menu.file.ollama",
+                    "command_class": "OllamaInfoCommand"
+                },
+                {
+                    "type": "action",
+                    "id": "menu.file.validate",
+                    "command_class": "OllamaValidateCommand"
+                },
+                {
+                    "type": "action",
+                    "id": "menu.file.edit_locales",
+                    "command_class": "LanguageEditorCommand"
+                },
+                {
+                    "type": "separator"
+                },
+                {
+                    "type": "action",
+                    "id": "menu.file.reset_system",
+                    "command_class": "ResetSystemCommand"
+                },
+                {
+                    "type": "separator"
+                },
+                {
+                    "type": "action",
+                    "id": "menu.file.exit",
+                    "command_class": "ExitCommand"
+                }
+            ]
+        }
+    },
+    "menu_order": [
+        "file"
+    ],
+    "tab_structure": [
+        {
+            "id": "tab.welcome",
+            "i18n_key": "tabs.welcome.title",
+            "label": "Willkommen",
+            "layout_type": "form",
+            "elements": [
+                {
+                    "id": "welcome_headline",
+                    "type": "label",
+                    "i18n_key": "welcome.headline.text",
+                    "width": 400,
+                    "height": 40,
+                    "x": 20,
+                    "y": 20
+                },
+                {
+                    "id": "search_input_line",
+                    "type": "input_line",
+                    "placeholder_i18n": "welcome.search.placeholder",
+                    "width": 250,
+                    "height": 30,
+                    "x": 20,
+                    "y": 80
+                },
+                {
+                    "id": "search_execute_button",
+                    "type": "button",
+                    "i18n_key": "welcome.button.search",
+                    "macro_file": "macros.search_macro",
+                    "macro_event": "execute_search",
+                    "width": 120,
+                    "height": 30,
+                    "x": 280,
+                    "y": 80
+                }
+            ]
+        }
+    ],
+    "supported_languages": [
+        "de",
+        "en"
+    ],
+    "available_languages": []
+}

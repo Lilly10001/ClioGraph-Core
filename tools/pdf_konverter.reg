@@ -1,0 +1,4 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.py\shell\In PDF umwandeln\command]
+@="\"C:\\_Diss_Backup\\_Programmierung\\clioGraph\\.venv\\Scripts\\python.exe\" \"C:\\_Diss_Backup\\_Programmierung\\clioGraph\\tools\\convert_to_pdf.py\" \"%1\""

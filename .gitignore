@@ -1,0 +1,43 @@
+# --- Python Systemdateien ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+
+# --- IDE & Editor Einstellungen ---
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# --- ClioGraph Framework-Ausschluss (KORRIGIERT!) ---
+# Wir erlauben die Basis-Menüdatei auf GitHub, ignorieren aber lokale Sperr-Reste
+json_storage/dynamic_menu.json.bak
+json_storage/dynamic_menu.json.tmp
+
+# WICHTIG: Kern-Sprachdateien, Werkshüllen UND start_status.json MÜSSEN auf GitHub landen!
+json_storage/locales/*.json
+!json_storage/locales/de.json
+!json_storage/locales/en.json
+!json_storage/locales/de_factory.json
+!json_storage/locales/en_factory.json
+!json_storage/locales/start_status.json
+
+# Struktur des Backup-Korbs erlauben, aber den temporären Inhalt ignorieren
+json_storage/backup_locales/*
+!json_storage/backup_locales/.gitkeep
+
+# Wir ignorieren die temporären Makro-Dateien der Entwickler-Tests
+business/commands_user/cmd_tab_*.py
+!business/commands_user/__init__.py
+!business/commands_user/cmd_hello_world.py
+
+# --- Betriebssystem-Reste ---
+.DS_Store
+Thumbs.db
