@@ -8,3 +8,4 @@ PyQt6==6.11.0
 # Data Processing & Utilities
 fpdf2==2.8.7
 pillow==12.2.0
+requests==2.32.3
